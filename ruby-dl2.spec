@@ -2,6 +2,7 @@
 %define	ruby_libdir		%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 %define tarname dl2-ruby
 Summary:	Dynamic Loader module for Ruby
+Summary(pl):	Modu³ dynamicznego loadera dla jêzyka Ruby
 Name:		ruby-dl2
 %define snap	20030516
 Version:	0.%{snap}.1
@@ -18,6 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Dynamic Loader module for Ruby.
 
+%description -l pl
+Modu³ dynamicznego loadera dla jêzyka Ruby.
+
 %prep
 %setup -q -n %{name}
 
@@ -31,7 +35,8 @@ ruby extconf.rb
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{ruby_sitearchdir}
 
-make install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 
 %clean
