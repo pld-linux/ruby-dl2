@@ -1,6 +1,3 @@
-%define	ruby_sitearchdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
-%define	ruby_libdir		%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define tarname dl2-ruby
 Summary:	Dynamic Loader module for Ruby
 Summary(pl):	Modu³ dynamicznego loadera dla jêzyka Ruby
 Name:		ruby-dl2
@@ -11,7 +8,8 @@ License:	GPL
 Group:		Development/Languages
 Source0:	http://ttsky.net/src/%{name}-%{snap}.tar.gz
 # Source0-md5:	5c99efd2f93d61bafeda0ab7b59e5629
-URL:	http://w3j.ttsky.net/?ruby-dl2
+URL:		http://w3j.ttsky.net/?ruby-dl2
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
