@@ -3,15 +3,15 @@ Summary(pl):	Modu³ dynamicznego loadera dla jêzyka Ruby
 Name:		ruby-dl2
 %define snap	20030516
 Version:	0.%{snap}.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages
 Source0:	http://ttsky.net/src/%{name}-%{snap}.tar.gz
 # Source0-md5:	5c99efd2f93d61bafeda0ab7b59e5629
 URL:		http://w3j.ttsky.net/?ruby-dl2
 BuildRequires:	rpmbuild(macros) >= 1.263
-BuildRequires:	ruby
-Requires:	ruby
+BuildRequires:	ruby-modules
+Requires:	ruby-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
