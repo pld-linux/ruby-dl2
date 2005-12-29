@@ -9,9 +9,9 @@ Group:		Development/Languages
 Source0:	http://ttsky.net/src/%{name}-%{snap}.tar.gz
 # Source0-md5:	5c99efd2f93d61bafeda0ab7b59e5629
 URL:		http://w3j.ttsky.net/?ruby-dl2
-BuildRequires:	rpmbuild(macros) >= 1.263
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
