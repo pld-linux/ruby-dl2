@@ -11,7 +11,7 @@ Source0:	http://ttsky.net/src/%{name}-%{snap}.tar.gz
 URL:		http://w3j.ttsky.net/?ruby-dl2
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
-%ruby_mod_ver_requires_eq
+%{?ruby_mod_ver_requires_eq}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
