@@ -1,5 +1,5 @@
 Summary:	Dynamic Loader module for Ruby
-Summary(pl.UTF-8):   Moduł dynamicznego loadera dla języka Ruby
+Summary(pl.UTF-8):	Moduł dynamicznego loadera dla języka Ruby
 Name:		ruby-dl2
 %define snap	20030516
 Version:	0.%{snap}.1
