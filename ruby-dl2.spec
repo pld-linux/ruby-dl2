@@ -1,5 +1,5 @@
 Summary:	Dynamic Loader module for Ruby
-Summary(pl):	Modu³ dynamicznego loadera dla jêzyka Ruby
+Summary(pl.UTF-8):   ModuÅ‚ dynamicznego loadera dla jÄ™zyka Ruby
 Name:		ruby-dl2
 %define snap	20030516
 Version:	0.%{snap}.1
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Dynamic Loader module for Ruby.
 
-%description -l pl
-Modu³ dynamicznego loadera dla jêzyka Ruby.
+%description -l pl.UTF-8
+ModuÅ‚ dynamicznego loadera dla jÄ™zyka Ruby.
 
 %prep
 %setup -q -n %{name}
